@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add More Events"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_close"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:background="@color/red_700"
+            android:layout_marginHorizontal="10dp" />
+
+        <TextView
+            android:id="@+id/no_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Events Found"
+            android:visibility="gone"
+            android:textColor="@color/red_200"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/add_more_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/single_item_add_more_event"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

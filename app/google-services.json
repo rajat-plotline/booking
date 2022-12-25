@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "278553024933",
+    "firebase_url": "https://booking-8efb5-default-rtdb.firebaseio.com",
+    "project_id": "booking-8efb5",
+    "storage_bucket": "booking-8efb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278553024933:android:4fdf70d6adafa64c5ff04c",
+        "android_client_info": {
+          "package_name": "com.rajat.booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278553024933-4pds3pli19uqbleosb6q703dfja5luvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_MnnBPuPqyEn06kS_WrBkImA3N2g4DQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278553024933-4pds3pli19uqbleosb6q703dfja5luvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

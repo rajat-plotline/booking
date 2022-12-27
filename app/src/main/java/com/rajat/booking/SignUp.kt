@@ -44,10 +44,10 @@ class SignUp : AppCompatActivity() {
 
         register.setOnClickListener {
             if(etName.text.toString().isEmpty() || etPassword.text.toString().isEmpty() || etEmail.text.toString().isEmpty()
-                && etPhone.text.toString().isEmpty()){
+                || etPhone.text.toString().isEmpty()){
                 Toast.makeText(this@SignUp,"Invalid Details",Toast.LENGTH_SHORT).show()
             }
-            else if(etPhone.text.toString().isDigitsOnly() || etPhone.text.toString().length!=10){
+            else if(!etPhone.text.toString().isDigitsOnly() || etPhone.text.toString().length!=10){
                 Toast.makeText(this@SignUp,"Invalid Phone",Toast.LENGTH_SHORT).show()
             }
             else if(etPassword.text.toString().length<6){
